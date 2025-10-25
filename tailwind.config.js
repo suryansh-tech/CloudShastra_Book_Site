@@ -13,8 +13,8 @@ export default {
         "13xl": "13rem",
       },
       animation: {
-        "horizontal-scroll": "horizontal-scroll linear 16s infinite ",
-        "horizontal-scroll-2": "horizontal-scroll-2 linear 16s infinite ",
+        "horizontal-scroll": "horizontal-scroll linear 35s infinite ",
+        "horizontal-scroll-2": "horizontal-scroll-2 linear 35s infinite ",
       },
       keyframes: {
         "horizontal-scroll": {
@@ -28,5 +28,17 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".scrollbar-hide": {
+          "-ms-overflow-style": "none", // Hide scrollbar in IE/Edge
+          "scrollbar-width": "none", // Hide scrollbar in Firefox
+        },
+        ".scrollbar-hide::-webkit-scrollbar": {
+          display: "none", // Hide scrollbar in Chrome/Safari
+        },
+      });
+    },
+  ],
 };
