@@ -101,21 +101,21 @@ export const UI = () => {
                     d="M15.078,19.043c1.957-0.326,5.122-0.529,4.435,1.304c-0.489,1.304-7.185,2.185-7.185,0.652 C12.328,19.467,15.078,19.043,15.078,19.043z"
                   ></path>
                 </svg>
-                <span class="now">now!</span>
-                <span class="play">Join</span>
+                <span className="now">now!</span>
+                <span className="play">Join</span>
               </button>
             </a>
 
             <a id="myname" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/suryansh-702a37292/">
             <button id="btn" className="sm:mr-16 mr-5 text-sm tracking-tight ">
-              <span class="span-mother">
+              <span className="span-mother">
                 <span>M</span>
                 <span>A</span>
                 <span>K</span>
                 <span>R</span>
 
               </span>
-              <span class="span-mother2">
+              <span className="span-mother2">
                 <span>M</span>
                 <span>A</span>
                 <span>K</span>
